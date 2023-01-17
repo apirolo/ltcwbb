@@ -11,10 +11,8 @@ import pandas as pd
 from os import path
 import os
 
-currentPath = os.getcwd()
-path1 = os.path.split(currentPath)[0]
-path2 = os.path.split(path1)[0]
-dataPath = os.path.join(path2, 'data', 'problems')
+dataPath = path.join(path.dirname(path.dirname(os.getcwd())),
+                        'data', 'problems')
 
 # 3.0.1
 
