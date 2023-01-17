@@ -31,40 +31,40 @@ book.
 # 2.1 Which of the following are valid Python variable names?
 
     # a) _throwaway_data
-        """
+"""
         This is a valid variable name, the book mentions variable names with 
         an underscore are often used for short-term variables that will be 
         thrown away
         """
     # b) n_of_hrs
-        """
+"""
         This is a valid variable name.
         """
     # c) 2nd_base_name
-        """
+"""
         This is not a valid variable name as variable names cannot begin with
         a number.
         """
     # d) grandSlam
-        """
+"""
         This is a valid variable name.
         """
     # e) strike3
-        """
+"""
         This is a valid variable name, the names can contain numbers as long
         as they do not start with the number.
         """
     # f) starting pitcher
-        """
+"""
         This is not a valid name as variable names cannot contain spaces.
         """
     # g) @home_or_away
-        """
+"""
         This is not a valid variable name as the only symbol allowed to be 
         used in a variable name is an underscore.
         """
     # h) 'value_over_replacement'
-        """
+"""
         This is not a valid variable name as it is a string, which cannot be
         a variable name.
         """
@@ -75,7 +75,7 @@ runs = 0
 runs = runs + 2
 runs = runs + 5
 
-    """
+"""
     The value of runs at the end of this code will be 7, the value is initially
     0, then it has the value of 2, then 5 added to it. 2 + 5 = 7
     """
@@ -217,7 +217,7 @@ def commentary_plus2(BA):
 
 # 2.8 Say we have a list:
     
-    dodgers_roster = ['clayton kershaw', 'cody bellinger', 'mookie betts']
+dodgers_roster = ['clayton kershaw', 'cody bellinger', 'mookie betts']
     
 #     List at least three ways you can to print the list without 'mookie betts'.
 #     Use at least one comprehension.
@@ -228,7 +228,7 @@ print([x for x in dodgers_roster if x != 'mookie betts'])
 
 # 2.9 Say we have a dict:
     
-    pitcher_info = {'starter' : 'Kershaw', 'throws_right' : False}
+pitcher_info = {'starter' : 'Kershaw', 'throws_right' : False}
     
 # a) How would you change 'starter' to 'Joe Kelly'?
 
@@ -245,26 +245,26 @@ def toggle_throws(pitcher_dict):
 
 # 2.10 Assuming we've defined our same dict:
     
-    pitcher_info = {'starter' : 'Kershaw', 'throws_right' : False}
+pitcher_info = {'starter' : 'Kershaw', 'throws_right' : False}
 
 #      Go through each line and say whether it'll work without error.
 
 # a) pitcher_info['era']
-    """
+"""
     No, there is no 'era' key defined in this dict.
     """
 # b) pitcher_info[starter]
-    """
+"""
     No, the value starter should be in quotes 'starter'.
     """
 # c) pitcher_info['age'] = 32
-    """
+"""
     Yes, this will create a new key / value entry in the dict of {'age' : 32}.
     """
 
 # 2.11 Say we're looking at the list:
     
-    my_roster_list = ['clayton kershaw', 'mookie betts', 'cody bellinger']
+my_roster_list = ['clayton kershaw', 'mookie betts', 'cody bellinger']
     
 # a) Write a loop that goes through and prints the last name of every player
 #    in my_roster_list .
@@ -279,11 +279,9 @@ for i in my_roster_list:
 
 # 2.12 Say we're working with the dict:
     
-    my_roster_dict = {
-        'p' : 'clayton kershaw',
-        'rf' : 'mookie betts',
-        '1b' : 'cody bellinger'
-        }
+my_roster_dict = {'p' : 'clayton kershaw',
+                  'rf' : 'mookie betts',
+                  '1b' : 'cody bellinger'}
 
 # a) Write a comprehension that turns my_roster_dict into a list of just the
 #    positions.
