@@ -12,7 +12,7 @@ from os import path
 import os
 
 dataPath = path.join(path.dirname(path.dirname(os.getcwd())),
-                        'data', 'problems')
+                        'data')
 
 # 3.0.1
 
